@@ -1,5 +1,5 @@
 """
-Main module for histogram command line utility.
+Main module for histog command line utility.
 """
 import os
 import signal
@@ -11,11 +11,11 @@ import textwrap
 def usage():
     print(textwrap.dedent("""
     Description:
-        histogram - draw histogram based on a set of integers from STDIN. Input
-        is a string of integers, one per line. Lines with bad values will simply
+        histog - draw histogram based on a set of integers from STDIN. Input is
+        a string of integers, one per line. Lines with bad values will simply
         be skipped. Note that graph is rotated by -90 degrees.
     
-    Usage: histogram [OPTIONS]
+    Usage: histog [OPTIONS]
     
     Options:
         -h      - display this help and exit
@@ -29,7 +29,7 @@ def usage():
         -H      - graph height in number of chars (defaults to available chars)
 
     Example:
-        for x in $(seq 1000); do echo $RANDOM; done | histogram -p
+        for x in $(seq 1000); do echo $RANDOM; done | histog -p
       """))
 
 def signal_handler(signal, frame):

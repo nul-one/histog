@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 
 from setuptools import setup, find_packages
-import histogram
+import histog
 
 setup(
-    name = 'histogram',
-    description = histogram.__doc__.strip(),
-    url = 'https://github.com/nul-one/histogram',
-    download_url = 'https://github.com/nul-one/histogram/archive/'+histogram.__version__+'.tar.gz',
-    version = histogram.__version__,
-    author = histogram.__author__,
-    author_email = histogram.__author_email__,
-    license = histogram.__licence__,
-    packages = [ 'histogram' ],
+    name = 'histog',
+    description = histog.__doc__.strip(),
+    url = 'https://github.com/nul-one/histog',
+    download_url = 'https://github.com/nul-one/histog/archive/'+histog.__version__+'.tar.gz',
+    version = histog.__version__,
+    author = histog.__author__,
+    author_email = histog.__author_email__,
+    license = histog.__licence__,
+    packages = [ 'histog' ],
     entry_points={ 
         'console_scripts': [
-            'histogram=histogram.__main__:main',
+            'histog=histog.__main__:main',
         ],
     },
     install_requires = [
